@@ -81,11 +81,11 @@ chmod -Rv 775 /var/ftp
 ```
 cat /etc/passwd | grep 'user_'
 
-user_a1:x:1001:1001::/var/ftp/group_A/user_a1:/sbin/nologin
-user_b1:x:1004:1002::/var/ftp/group_B/user_b1:/sbin/nologin
-user_b2:x:1005:1002::/var/ftp/group_B/user_b2:/sbin/nologin
-user_a2:x:1006:1001::/var/ftp/group_A/user_a2:/sbin/nologin
-user_a3:x:1007:1001::/var/ftp/group_A/user_a3:/sbin/nologin
+user_a1:x:1000:1000::/var/ftp/group_A/user_a1:/sbin/nologin
+user_b1:x:1001:1000::/var/ftp/group_B/user_b1:/sbin/nologin
+user_b2:x:1002:1000::/var/ftp/group_B/user_b2:/sbin/nologin
+user_a2:x:1003:1001::/var/ftp/group_A/user_a2:/sbin/nologin
+user_a3:x:1004:1001::/var/ftp/group_A/user_a3:/sbin/nologin
 ```
 
 ```
