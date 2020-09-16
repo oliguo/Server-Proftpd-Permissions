@@ -123,6 +123,7 @@ PassivePorts 51100 51200
 RequireValidShell off
 AuthUserFile /usr/local/proftpd/ftpd.passwd
 
+DefaultRoot /var/ftp/group_A/user_a1 group_A
 <Directory "/var/ftp/group_A/user_a1">
     <Limit CWD MKD RNFR READ WRITE STOR RETR>
         DenyAll
@@ -135,6 +136,7 @@ AuthUserFile /usr/local/proftpd/ftpd.passwd
     </Limit>
 </Directory>
 
+DefaultRoot /var/ftp/group_A/user_a2 group_A
 <Directory "/var/ftp/group_A/user_a2">
     <Limit CWD MKD RNFR READ WRITE STOR RETR>
         DenyAll
@@ -148,6 +150,7 @@ AuthUserFile /usr/local/proftpd/ftpd.passwd
     </Limit>
 </Directory>
 
+DefaultRoot /var/ftp/group_A/user_a3 group_A
 <Directory "/var/ftp/group_A/user_a3">
     <Limit CWD MKD RNFR READ WRITE STOR RETR>
         DenyAll
@@ -161,6 +164,7 @@ AuthUserFile /usr/local/proftpd/ftpd.passwd
     </Limit>
 </Directory>
 
+DefaultRoot /var/ftp/group_B/user_b1 group_B
 <Directory "/var/ftp/group_B/user_b1">
     <Limit CWD MKD RNFR READ WRITE STOR RETR>
         DenyAll
@@ -171,6 +175,7 @@ AuthUserFile /usr/local/proftpd/ftpd.passwd
     </Limit>
 </Directory>
 
+DefaultRoot /var/ftp/group_B/user_b1 group_B
 <Directory "/var/ftp/group_B/user_b2">
     <Limit CWD MKD RNFR READ WRITE STOR RETR>
         DenyAll
