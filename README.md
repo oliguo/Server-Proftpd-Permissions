@@ -222,4 +222,7 @@ profile proftpd /usr/sbin/proftpd flags=(complain) {
 }
 EOF
 ```
-
+## Restart it
+```
+sudo apparmor_parser -r /etc/apparmor.d/usr.sbin.proftpd
+```
