@@ -1,4 +1,4 @@
-# Proftpd User Manual on Ubuntu 18.04
+# Proftpd User Manual on Ubuntu
 
 ## Installation
 
