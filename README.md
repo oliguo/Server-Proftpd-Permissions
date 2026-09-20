@@ -200,3 +200,26 @@ proftpd -t46
 ```
 service proftpd restart
 ```
+
+
+# AppArmor Issue
+## Check whether enable
+```
+systemctl status apparmor
+```
+## If running and add the files whitelist
+```
+cat << 'EOF' > /etc/apparmor.d/usr.sbin.proftpd
+#include <tunables/global>
+
+profile proftpd /usr/sbin/proftpd flags=(complain) {
+  #include <abstractions/base>
+  #include <abstractions/nameservice>
+
+  /var/ftp/** rwk,
+  /usr/local/proftpd/** r,
+  /etc/proftpd/** r,
+}
+EOF
+```
+
